@@ -56,7 +56,7 @@ def get_coordinates(city) -> tuple[int, int]:
 
     params = {'q':city, 'appid':key}
     res = requests.get(API, params=params).json()
-    emailfunc.send_email(content=res)
+    emailfunc.send_email(content=str(res))
     sys.exit(0)
     
     return res['lat'], res['lon']
