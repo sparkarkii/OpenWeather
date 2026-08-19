@@ -55,9 +55,7 @@ def get_coordinates(city) -> tuple[int, int]:
     API = 'http://api.openweathermap.org/geo/1.0/direct?'
 
     params = {'q':city, 'appid':key}
-    res = requests.get(API, params=params).json()
-    emailfunc.send_email(content=str(res))
-    sys.exit(0)
+    res = requests.get(API, params=params).json()[0]
     
     return res['lat'], res['lon']
 
