@@ -75,4 +75,4 @@ def format_email(res) -> tuple[str, str]:
 
 
 if __name__ == '__main__':
-    get_weather(city='New Taipe')
+    get_weather(city='New Taipei')
