@@ -1,13 +1,13 @@
 import requests
 import datetime
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 import sys
-sys.path.append(r'D:\py_script\emailfunc')
+# sys.path.append(r'D:\py_script\emailfunc')
 import emailfunc
 
 
-load_dotenv()
+# load_dotenv()
 key = os.environ['OPENWEATHER_KEY']
 
 
