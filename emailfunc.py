@@ -1,11 +1,11 @@
 from email.message import EmailMessage
 from smtplib import SMTP
 from os import environ
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import sys
 
 
-load_dotenv()
+# load_dotenv()
 email = environ['EMAIL']
 pw =  environ['PW']
 
